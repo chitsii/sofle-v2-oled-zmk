@@ -157,8 +157,8 @@ layers:
   - LEFT
   - DOWN
   - RIGHT
-  - DEL
-  - BSPC
+  - ''
+  - ''
   - {t: ▽, type: trans}
   - UNDO
   - CUT
@@ -168,9 +168,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '&left_10'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&right_10'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
