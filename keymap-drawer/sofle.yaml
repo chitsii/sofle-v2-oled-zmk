@@ -100,14 +100,14 @@ layers:
   - '|'
   - {t: ▽, type: trans}
   - '='
-  - '-'
-  - KP PLUS
-  - '{'
-  - '}'
+  - '&pair_parenthis'
+  - '&pair_brace'
+  - '&pair_bracket'
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '['
   - ']'
+  - '}'
   - KP PLUS
   - KP MINUS
   - \
