@@ -123,10 +123,10 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&none       &kp F1      &kp F2     &kp F3      &kp F4       &kp F5                     &trans     &trans    &trans    &trans     &trans  &trans
-&trans      &kp F6      &kp F7     &kp F8      &kp F9       &kp F10                    &kp PG_UP  &kp HOME  &kp UP    &kp END    &none   &trans
-&kp DELETE  &kp F11     &kp F12    &kp F13     &kp F14      &kp F15                    &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &none   &none
-&trans      &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &trans   &trans    &trans  &trans     &left_10  &trans    &right_10  &trans  &trans
+&none       &kp F1      &kp F2     &kp F3      &kp F4       &kp F5                     &trans     &trans    &trans    &trans     &trans                &trans
+&trans      &kp F6      &kp F7     &kp F8      &kp F9       &kp F10                    &kp PG_UP  &kp HOME  &kp UP    &kp END    &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+&kp DELETE  &kp F11     &kp F12    &kp F13     &kp F14      &kp F15                    &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LEFT_BRACE        &kp RIGHT_BRACE
+&trans      &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &trans   &trans    &trans  &trans     &left_10  &trans    &right_10  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
                         &trans     &trans      &trans       &trans   &trans    &trans  &trans     &trans    &trans    &trans
             >;
 
