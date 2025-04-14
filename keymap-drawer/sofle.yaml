@@ -13,7 +13,7 @@ layers:
   - '9'
   - '0'
   - '-'
-  - ESC
+  - TAB
   - Q
   - W
   - E
@@ -25,7 +25,7 @@ layers:
   - O
   - P
   - '{'
-  - TAB
+  - BACKSPACE
   - A
   - S
   - D
@@ -59,7 +59,7 @@ layers:
   - lower
   - {t: ENTER, h: RIGHT GUI}
   - raise
-  - raise
+  - RIGHT ALT
   - RCTRL
   lower:
   - '&studio_unlock'
@@ -74,7 +74,7 @@ layers:
   - F9
   - F10
   - F11
-  - '`'
+  - Sft+CAPS
   - '1'
   - '2'
   - '3'
@@ -86,7 +86,7 @@ layers:
   - '9'
   - '0'
   - F12
-  - {t: ▽, type: trans}
+  - DELETE
   - '!'
   - '@'
   - '#'
@@ -95,8 +95,8 @@ layers:
   - ^
   - '&'
   - KP MULTIPLY
-  - (
-  - )
+  - KP EQUAL
+  - _
   - '|'
   - {t: ▽, type: trans}
   - '='
@@ -108,10 +108,10 @@ layers:
   - {t: ▽, type: trans}
   - '['
   - ']'
-  - ;
-  - ':'
+  - KP PLUS
+  - KP MINUS
   - \
-  - {t: ▽, type: trans}
+  - KP EQUAL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -123,12 +123,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   raise:
-  - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
+  - ''
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -136,23 +136,23 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - INS
-  - PSCRN
-  - CMENU
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
   - PG UP
   - {t: ▽, type: trans}
   - UP
   - {t: ▽, type: trans}
   - '0'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LALT
-  - LCTRL
-  - LSHFT
-  - {t: ▽, type: trans}
-  - CLCK
+  - DELETE
+  - F11
+  - F12
+  - F13
+  - F14
+  - F15
   - PG DN
   - LEFT
   - DOWN
