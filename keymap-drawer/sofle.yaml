@@ -142,10 +142,10 @@ layers:
   - F9
   - F10
   - PG UP
-  - {t: ▽, type: trans}
+  - HOME
   - UP
-  - {t: ▽, type: trans}
-  - '0'
+  - END
+  - ''
   - {t: ▽, type: trans}
   - DELETE
   - F11
