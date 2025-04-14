@@ -27,6 +27,22 @@
         };
     };
 
+    macros {
+        left_10: left_10 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW>;
+            label = "LEFT_10";
+        };
+
+        right_10: right_10 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW>;
+            label = "RIGHT_10";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -84,10 +100,10 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&none       &kp F1      &kp F2     &kp F3      &kp F4       &kp F5                     &trans     &trans    &trans    &trans     &trans   &trans
-&trans      &kp F6      &kp F7     &kp F8      &kp F9       &kp F10                    &kp PG_UP  &kp HOME  &kp UP    &kp END    &none    &trans
-&kp DELETE  &kp F11     &kp F12    &kp F13     &kp F14      &kp F15                    &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  &kp BSPC
-&trans      &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &trans   &trans    &trans  &trans     &trans    &trans    &trans     &trans   &trans
+&none       &kp F1      &kp F2     &kp F3      &kp F4       &kp F5                     &trans     &trans    &trans    &trans     &trans  &trans
+&trans      &kp F6      &kp F7     &kp F8      &kp F9       &kp F10                    &kp PG_UP  &kp HOME  &kp UP    &kp END    &none   &trans
+&kp DELETE  &kp F11     &kp F12    &kp F13     &kp F14      &kp F15                    &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &none   &none
+&trans      &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &trans   &trans    &trans  &trans     &left_10  &trans    &right_10  &trans  &trans
                         &trans     &trans      &trans       &trans   &trans    &trans  &trans     &trans    &trans    &trans
             >;
 
