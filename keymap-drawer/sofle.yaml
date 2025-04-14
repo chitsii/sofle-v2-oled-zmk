@@ -85,7 +85,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - F12
+  - KP EQUAL
   - DELETE
   - '!'
   - '@'
@@ -95,7 +95,7 @@ layers:
   - ^
   - '&'
   - KP MULTIPLY
-  - KP EQUAL
+  - '*'
   - _
   - '|'
   - {t: ▽, type: trans}
