@@ -102,7 +102,7 @@ layers:
   - '='
   - '&pair_parenthis'
   - '&pair_brace'
-  - '&pair_bracket'
+  - '&pair_brackets'
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
