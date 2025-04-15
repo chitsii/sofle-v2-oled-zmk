@@ -31,36 +31,15 @@
         left_10: left_10 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW>;
+            bindings = <&kp LEFT_ARROW &key_repeat &key_repeat &key_repeat &key_repeat>;
             label = "LEFT_10";
         };
 
         right_10: right_10 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW>;
+            bindings = <&kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW>;
             label = "RIGHT_10";
-        };
-
-        pair_parenthis: parenthis {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>;
-            label = "PARENTHIS";
-        };
-
-        pair_brace: pair_brace {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT_ARROW>;
-            label = "PAIR_BRACE";
-        };
-
-        pair_bracket: pair_bracket {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT_ARROW>;
-            label = "PAIR_BRACKET";
         };
     };
 
@@ -123,11 +102,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&none       &kp F1      &kp F2     &kp F3      &kp F4       &kp F5                     &trans     &trans    &trans    &trans     &trans                &trans
-&trans      &kp F6      &kp F7     &kp F8      &kp F9       &kp F10                    &kp PG_UP  &kp HOME  &kp UP    &kp END    &kp LEFT_BRACKET      &kp RIGHT_BRACKET
-&kp DELETE  &kp F11     &kp F12    &kp F13     &kp F14      &kp F15                    &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LEFT_BRACE        &kp RIGHT_BRACE
-&trans      &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &trans   &trans    &trans  &trans     &left_10  &trans    &right_10  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-                        &trans     &trans      &trans       &trans   &trans    &trans  &trans     &trans    &trans    &trans
+&none       &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                     &trans     &trans    &trans    &trans     &trans                &trans
+&trans      &kp F6   &kp F7   &kp F8   &kp F9   &kp F10                    &kp PG_UP  &kp HOME  &kp UP    &kp END    &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+&kp DELETE  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15                    &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LEFT_BRACE        &kp RIGHT_BRACE
+&trans      &none    &none    &none    &none    &trans   &trans    &trans  &trans     &left_10  &trans    &right_10  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+                     &trans   &trans   &trans   &trans   &trans    &trans  &trans     &trans    &trans    &trans
             >;
 
             sensor-bindings =
