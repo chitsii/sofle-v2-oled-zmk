@@ -49,8 +49,6 @@
             label = "TD_1SPACE_1HOLDGUI_2ALT";
             #binding-cells = <0>;
             bindings = <&mt LEFT_GUI SPACE>, <&kp LEFT_ALT>;
-
-            tapping-term-ms = <150>;
         };
 
         TD_1Enter_1holdGui_2Ctrl: TD_1Enter_1holdGui_2Ctrl {
@@ -58,8 +56,6 @@
             label = "TD_1ENTER_1HOLDGUI_2CTRL";
             #binding-cells = <0>;
             bindings = <&mt LEFT_GUI ENTER>, <&kp LEFT_CONTROL>;
-
-            tapping-term-ms = <150>;
         };
     };
 
