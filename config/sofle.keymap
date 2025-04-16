@@ -24,8 +24,8 @@
         compatible = "zmk,conditional-layers";
 
         adjust_layer {
-            if-layers = <LOWER RAISE>;
-            then-layer = <ADJUST>;
+            if-layers = <2 3>;
+            then-layer = <4>;
         };
     };
 
@@ -63,12 +63,21 @@
 
             tapping-term-ms = <170>;
         };
+
+        TD_1Space_1holdCtrl_2Alt: TD_1Space_1holdCtrl_2Alt {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_1SPACE_1HOLDCTRL_2ALT";
+            #binding-cells = <0>;
+            bindings = <&mt LCTRL SPACE>, <&kp LEFT_ALT>;
+
+            tapping-term-ms = <170>;
+        };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        macos_default {
             label = "default";
 
             // ------------------------------------------------------------------------------------------------------------
@@ -82,11 +91,21 @@
 &kp ESC        &kp N1  &kp N2    &kp N3    &kp N4  &kp N5                                         &kp N6                     &kp N7          &kp N8         &kp N9     &kp N0    &kp TILDE
 &kp TAB        &kp Q   &kp W     &kp E     &kp R   &kp T                                          &kp Y                      &kp U           &kp I          &kp O      &kp P     &kp MINUS
 &kp BACKSPACE  &kp A   &kp S     &kp D     &kp F   &kp G                                          &kp H                      &kp J           &kp K          &kp L      &kp SEMI  &kp SQT
-&kp LSHFT      &kp Z   &kp X     &kp C     &kp V   &kp B                     &kp C_MUTE    &none  &kp N                      &kp M           &kp COMMA      &kp DOT    &kp FSLH  &kp RSHFT
-                       &kp LGUI  &kp LALT  &mo 2   &TD_1Space_1holdGui_2Alt  &mo 1         &mo 1  &TD_1Enter_1holdGui_2Ctrl  &lt 2 CAPSLOCK  &kp RIGHT_ALT  &kp RCTRL
+&kp LSHFT      &kp Z   &kp X     &kp C     &kp V   &kp B                     &kp C_MUTE    &to 1  &kp N                      &kp M           &kp COMMA      &kp DOT    &kp FSLH  &kp RSHFT
+                       &kp LGUI  &kp LALT  &mo 3   &TD_1Space_1holdGui_2Alt  &mo 2         &mo 2  &TD_1Enter_1holdGui_2Ctrl  &lt 3 CAPSLOCK  &kp RIGHT_ALT  &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+        };
+
+        windows_default {
+            bindings = <
+&trans  &trans  &trans     &trans  &trans  &trans                                       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans  &trans  &trans                                       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans  &trans  &trans                                       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans  &trans  &trans                     &trans    &to 0   &trans  &trans  &trans  &trans  &trans  &trans
+                &kp LCTRL  &trans  &trans  &TD_1Space_1holdCtrl_2Alt  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
         };
 
         lower_layer {
@@ -151,16 +170,6 @@
 &none              &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &none            &none                                      &none  &none  &none  &none  &none  &none
 &none              &none            &none            &none            &none            &none            &rgb_ug RGB_TOG    &none  &none  &none  &none  &none  &none  &none
                                     &none            &none            &none            &none            &none              &none  &none  &none  &none  &none
-            >;
-        };
-
-        windows {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
