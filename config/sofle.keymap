@@ -57,7 +57,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_1ENTER_1HOLDGUI_2CTRL";
             #binding-cells = <0>;
-            bindings = <&mt LEFT_GUI ENTER>, <&kp RCTRL>;
+            bindings = <&mt LEFT_GUI ENTER>, <&kp LEFT_CONTROL>;
 
             tapping-term-ms = <150>;
         };
