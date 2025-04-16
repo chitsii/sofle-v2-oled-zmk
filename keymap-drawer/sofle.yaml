@@ -51,7 +51,7 @@ layers:
   - .
   - /
   - RSHFT
-  - LGUI
+  - RCTRL
   - LALT
   - raise
   - '&TD_1Space_1holdGui_2Alt'
@@ -112,7 +112,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LCTRL
+  - LEFT GUI
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&TD_1Space_1holdCtrl_2Alt'
@@ -135,7 +135,7 @@ layers:
   - F9
   - F10
   - F11
-  - Sft+CAPS
+  - Gui+TAB
   - '1'
   - '2'
   - '3'
@@ -143,10 +143,10 @@ layers:
   - '5'
   - '6'
   - '7'
-  - '8'
-  - '9'
+  - +
+  - '='
   - '0'
-  - KP EQUAL
+  - '|'
   - DELETE
   - '!'
   - '@'
@@ -156,7 +156,7 @@ layers:
   - ^
   - '&'
   - KP MULTIPLY
-  - '*'
+  - '-'
   - _
   - '|'
   - {t: ▽, type: trans}
@@ -184,36 +184,36 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   raise:
-  - ''
+  - '`'
   - F1
   - F2
   - F3
   - F4
   - F5
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - F6
   - F7
   - F8
   - F9
   - F10
+  - DELETE
+  - PRINTSCREEN
+  - F11
+  - F12
+  - F13
+  - F14
+  - F15
   - PG UP
   - HOME
   - UP
   - END
   - '['
   - ']'
-  - DELETE
-  - F11
-  - F12
-  - F13
-  - F14
-  - F15
+  - BACKSPACE
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
   - PG DN
   - LEFT
   - DOWN
@@ -221,11 +221,11 @@ layers:
   - '{'
   - '}'
   - {t: ▽, type: trans}
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
