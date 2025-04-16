@@ -57,6 +57,15 @@
             #binding-cells = <0>;
             bindings = <&mt LEFT_GUI ENTER>, <&kp LEFT_CONTROL>;
         };
+
+        tCaps_hMomentryLayer: tCaps_hMomentryLayer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TCAPS_HMOMENTRYLAYER";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+        };
     };
 
     keymap {
@@ -73,11 +82,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp ESC        &kp N1  &kp N2    &kp N3    &kp N4  &kp N5                                         &kp N6                     &kp N7  &kp N8         &kp N9     &kp N0    &kp TILDE
-&kp TAB        &kp Q   &kp W     &kp E     &kp R   &kp T                                          &kp Y                      &kp U   &kp I          &kp O      &kp P     &kp MINUS
-&kp BACKSPACE  &kp A   &kp S     &kp D     &kp F   &kp G                                          &kp H                      &kp J   &kp K          &kp L      &kp SEMI  &kp SQT
-&kp LSHFT      &kp Z   &kp X     &kp C     &kp V   &kp B                     &kp C_MUTE    &none  &kp N                      &kp M   &kp COMMA      &kp DOT    &kp FSLH  &kp RSHFT
-                       &kp LGUI  &kp LALT  &mo 2   &TD_1Space_1holdGui_2Alt  &mo 1         &mo 1  &TD_1Enter_1holdGui_2Ctrl  &mo 2   &kp RIGHT_ALT  &kp RCTRL
+&kp ESC        &kp N1  &kp N2    &kp N3    &kp N4  &kp N5                                         &kp N6                     &kp N7                            &kp N8         &kp N9     &kp N0    &kp TILDE
+&kp TAB        &kp Q   &kp W     &kp E     &kp R   &kp T                                          &kp Y                      &kp U                             &kp I          &kp O      &kp P     &kp MINUS
+&kp BACKSPACE  &kp A   &kp S     &kp D     &kp F   &kp G                                          &kp H                      &kp J                             &kp K          &kp L      &kp SEMI  &kp SQT
+&kp LSHFT      &kp Z   &kp X     &kp C     &kp V   &kp B                     &kp C_MUTE    &none  &kp N                      &kp M                             &kp COMMA      &kp DOT    &kp FSLH  &kp RSHFT
+                       &kp LGUI  &kp LALT  &mo 2   &TD_1Space_1holdGui_2Alt  &mo 1         &mo 1  &TD_1Enter_1holdGui_2Ctrl  &tCaps_hMomentryLayer 2 CAPSLOCK  &kp RIGHT_ALT  &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
