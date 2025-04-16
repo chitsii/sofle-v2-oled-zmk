@@ -100,12 +100,16 @@
 
         windows_default {
             bindings = <
-&trans  &trans  &trans     &trans  &trans  &trans                                       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans  &trans  &trans                                       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans  &trans  &trans                                       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans  &trans  &trans                     &trans    &to 0   &trans  &trans  &trans  &trans  &trans  &trans
-                &kp LCTRL  &trans  &trans  &TD_1Space_1holdCtrl_2Alt  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans  &trans  &trans                                       &trans  &trans                     &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans  &trans  &trans                                       &trans  &trans                     &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans  &trans  &trans                                       &trans  &trans                     &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans  &trans  &trans                     &trans    &to 0   &trans  &trans                     &trans  &trans  &trans  &trans
+                &kp LCTRL  &trans  &trans  &TD_1Space_1holdCtrl_2Alt  &trans    &trans  &trans  &lt 3 LANG_ZENKAKUHANKAKU  &trans  &trans
             >;
+
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOLUME_DOWN>,
+                <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         lower_layer {
