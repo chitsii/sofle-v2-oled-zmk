@@ -51,10 +51,10 @@ layers:
   - .
   - /
   - RSHFT
-  - RCTRL
+  - LEFT GUI
   - LALT
   - raise
-  - {t: SPACE, h: LEFT GUI}
+  - SPACE
   - lower
   - lower
   - {t: ENTER, h: RIGHT GUI}
