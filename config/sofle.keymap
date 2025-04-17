@@ -46,29 +46,29 @@
     };
 
     behaviors {
-        TD_1Space_1holdGui_2Alt: TD_1Space_1holdGui_2Alt {
+        TD_1Space_1holdShift_2Gui: TD_1Space_1holdShift_2Gui {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_1SPACE_1HOLDGUI_2ALT";
+            label = "TD_1SPACE_1HOLDSHIFT_2GUI";
             #binding-cells = <0>;
-            bindings = <&mt LEFT_GUI SPACE>, <&kp LEFT_ALT>;
+            bindings = <&mt LEFT_SHIFT SPACE>, <&kp LEFT_GUI>;
 
             tapping-term-ms = <170>;
         };
 
-        TD_1Enter_1holdGui_2Ctrl: TD_1Enter_1holdGui_2Ctrl {
+        TD_1Enter_1holdGui_2Alt: TD_1Enter_1holdGui_2Alt {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_1ENTER_1HOLDGUI_2CTRL";
+            label = "TD_1ENTER_1HOLDGUI_2ALT";
             #binding-cells = <0>;
-            bindings = <&mt LEFT_GUI ENTER>, <&kp LEFT_CONTROL>;
+            bindings = <&mt LEFT_GUI ENTER>, <&kp RIGHT_ALT>;
 
             tapping-term-ms = <170>;
         };
 
-        TD_1Space_1holdCtrl_2Alt: TD_1Space_1holdCtrl_2Alt {
+        TD_1Space_1holdShift_2Ctrl: TD_1Space_1holdShift_2Ctrl {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_1SPACE_1HOLDCTRL_2ALT";
+            label = "TD_1SPACE_1HOLDSHIFT_2CTRL";
             #binding-cells = <0>;
-            bindings = <&mt LCTRL SPACE>, <&kp LEFT_ALT>;
+            bindings = <&mt LEFT_SHIFT SPACE>, <&kp LCTRL>;
 
             tapping-term-ms = <170>;
         };
@@ -115,11 +115,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp ESC        &kp N1  &kp N2     &kp N3    &kp N4  &kp N5                                         &kp N6                     &kp N7          &kp N8         &kp N9     &kp N0    &kp TILDE
-&kp TAB        &kp Q   &kp W      &kp E     &kp R   &kp T                                          &kp Y                      &kp U           &kp I          &kp O      &kp P     &kp MINUS
-&kp BACKSPACE  &kp A   &kp S      &kp D     &kp F   &kp G                                          &kp H                      &kp J           &kp K          &kp L      &kp SEMI  &kp SQT
-&kp LSHFT      &kp Z   &kp X      &kp C     &kp V   &kp B                     &kp C_MUTE    &to 1  &kp N                      &kp M           &kp COMMA      &kp DOT    &kp FSLH  &kp RSHFT
-                       &kp RCTRL  &kp LALT  &mo 3   &TD_1Space_1holdGui_2Alt  &mo 2         &mo 2  &TD_1Enter_1holdGui_2Ctrl  &lt 3 CAPSLOCK  &kp RIGHT_ALT  &kp RCTRL
+&kp ESC        &kp N1  &kp N2     &kp N3    &kp N4  &kp N5                                           &kp N6                    &kp N7          &kp N8         &kp N9     &kp N0    &kp TILDE
+&kp TAB        &kp Q   &kp W      &kp E     &kp R   &kp T                                            &kp Y                     &kp U           &kp I          &kp O      &kp P     &kp MINUS
+&kp BACKSPACE  &kp A   &kp S      &kp D     &kp F   &kp G                                            &kp H                     &kp J           &kp K          &kp L      &kp SEMI  &kp SQT
+&kp LSHFT      &kp Z   &kp X      &kp C     &kp V   &kp B                       &kp C_MUTE    &to 1  &kp N                     &kp M           &kp COMMA      &kp DOT    &kp FSLH  &kp RSHFT
+                       &kp RCTRL  &kp LALT  &mo 3   &TD_1Space_1holdShift_2Gui  &mo 2         &mo 2  &TD_1Enter_1holdGui_2Alt  &lt 3 CAPSLOCK  &kp RIGHT_ALT  &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -127,11 +127,11 @@
 
         windows_default {
             bindings = <
-&trans  &trans  &trans        &trans  &trans  &trans                                       &trans  &trans                     &trans  &trans  &trans  &trans
-&trans  &trans  &trans        &trans  &trans  &trans                                       &trans  &trans                     &trans  &trans  &trans  &trans
-&trans  &trans  &trans        &trans  &trans  &trans                                       &trans  &trans                     &trans  &trans  &trans  &trans
-&trans  &trans  &trans        &trans  &trans  &trans                     &trans    &to 0   &trans  &trans                     &trans  &trans  &trans  &trans
-                &kp LEFT_GUI  &trans  &trans  &TD_1Space_1holdCtrl_2Alt  &trans    &trans  &trans  &lt 3 LANG_ZENKAKUHANKAKU  &trans  &trans
+&trans  &trans  &trans        &trans  &trans  &trans                                         &trans  &trans                     &trans  &trans  &trans  &trans
+&trans  &trans  &trans        &trans  &trans  &trans                                         &trans  &trans                     &trans  &trans  &trans  &trans
+&trans  &trans  &trans        &trans  &trans  &trans                                         &trans  &trans                     &trans  &trans  &trans  &trans
+&trans  &trans  &trans        &trans  &trans  &trans                       &trans    &to 0   &trans  &trans                     &trans  &trans  &trans  &trans
+                &kp LEFT_GUI  &trans  &trans  &TD_1Space_1holdShift_2Ctrl  &trans    &trans  &trans  &lt 3 LANG_ZENKAKUHANKAKU  &trans  &trans
             >;
 
             sensor-bindings =
