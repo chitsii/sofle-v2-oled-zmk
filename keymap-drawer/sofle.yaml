@@ -206,8 +206,8 @@ layers:
   - HOME
   - UP
   - END
-  - '['
-  - ']'
+  - ''
+  - ''
   - BACKSPACE
   - +
   - '4'
@@ -218,8 +218,8 @@ layers:
   - LEFT
   - DOWN
   - RIGHT
-  - '{'
-  - '}'
+  - '-'
+  - _
   - {t: ▽, type: trans}
   - '0'
   - '1'
@@ -232,13 +232,13 @@ layers:
   - '&left_10'
   - {t: ▽, type: trans}
   - '&right_10'
-  - (
-  - )
+  - ''
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ), type: held}
-  - '}'
-  - ']'
+  - {type: held}
+  - ''
+  - ''
   - '&TD_bracket'
   - '&TD_brace'
   - '&TD_parenthis'
