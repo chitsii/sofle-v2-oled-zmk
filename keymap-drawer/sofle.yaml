@@ -239,9 +239,9 @@ layers:
   - {t: ), type: held}
   - '}'
   - ']'
-  - '['
-  - '{'
-  - (
+  - '&TD_bracket'
+  - '&TD_brace'
+  - '&TD_parenthis'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   adjust:
