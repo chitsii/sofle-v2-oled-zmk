@@ -54,7 +54,7 @@ layers:
   - LEFT GUI
   - LALT
   - raise
-  - SPACE
+  - {t: SPACE, h: LEFT GUI}
   - lower
   - lower
   - '&TD_1Enter_1holdGui_2Alt'
