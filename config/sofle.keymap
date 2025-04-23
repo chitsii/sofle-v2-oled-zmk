@@ -137,11 +137,11 @@
 
         windows_default {
             bindings = <
-&trans  &trans  &trans        &trans  &trans  &trans                                         &trans  &trans                     &trans  &trans  &trans  &trans
-&trans  &trans  &trans        &trans  &trans  &trans                                         &trans  &trans                     &trans  &trans  &trans  &trans
-&trans  &trans  &trans        &trans  &trans  &trans                                         &trans  &trans                     &trans  &trans  &trans  &trans
-&trans  &trans  &trans        &trans  &trans  &trans                       &trans    &to 0   &trans  &trans                     &trans  &trans  &trans  &trans
-                &kp LEFT_GUI  &trans  &trans  &TD_1Space_1holdShift_2Ctrl  &trans    &trans  &trans  &lt 3 LANG_ZENKAKUHANKAKU  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                     &trans  &trans     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                     &trans  &trans     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                     &trans  &trans     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                   &trans    &to 0   &trans  &trans     &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &mt_hold_require_prior_idle LCTRL SPACE  &trans    &trans  &trans  &lt 3 F13  &trans  &trans
             >;
 
             sensor-bindings =
