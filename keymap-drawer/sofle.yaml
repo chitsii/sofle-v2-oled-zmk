@@ -112,14 +112,14 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LEFT GUI
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&TD_1Space_1holdShift_2Ctrl'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: LANG ZENKAKUHANKAKU, h: raise}
+  - {t: SPACE, h: LCTRL}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: F13, h: raise}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   lower:
