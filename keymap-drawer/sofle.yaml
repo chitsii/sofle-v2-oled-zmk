@@ -134,8 +134,8 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - Gui+TAB
+  - DELETE
+  - Sft+CAPSLOCK
   - ''
   - F2
   - F12
@@ -207,7 +207,7 @@ layers:
   - UP
   - END
   - ''
-  - ''
+  - F12
   - BACKSPACE
   - +
   - '4'
